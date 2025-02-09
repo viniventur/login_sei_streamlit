@@ -26,21 +26,6 @@ if st.session_state.login_efetuado == False:
 
 # Config Layout (condicional de local ou online)
 
-if is_local():
-    
-    # Aplicar CSS para esconder o sidebar
-    hide_style = """
-    """
-else:
-
-    # Aplicar CSS para esconder o sidebar
-    hide_style = """
-        <style>
-        #MainMenu {visibility: hidden}
-        header {visibility: hidden}
-        </style>
-    """
-
 def modulos_menu():
 
     if st.session_state.acesso == 'ADMIN':

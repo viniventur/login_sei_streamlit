@@ -30,30 +30,6 @@ if st.session_state.login_efetuado == False:
 
 # Config Layout (condicional de local ou online)
 
-if is_local():
-    
-    # Aplicar CSS para esconder o sidebar
-    hide_style = """
-    """
-else:
-
-    # Aplicar CSS para esconder o sidebar
-    hide_style = """
-        <style>
-        [data-testid="stSidebar"] {
-            display: none;
-        }
-
-        [data-testid="stBaseButton-headerNoPadding"] {
-            display: none;
-        }
-
-        #MainMenu {visibility: hidden}
-        header {visibility: hidden}
-        </style>
-    """
-st.markdown(hide_style, unsafe_allow_html=True)
-
 def main():
 
     st.session_state.pag = 'dash1'
