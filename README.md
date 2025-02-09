@@ -8,7 +8,7 @@
 
 ## Descrição do projeto
 
-Este projeto utiliza o Sistema Eletrônico de Informações (SEI) como ferramenta de autenticação em aplicativos em **Streamlit** por meio de automações e raspagens implementadas com o **Selenium**.
+Este projeto visa utilizar o Sistema Eletrônico de Informações (SEI) como ferramenta de autenticação em aplicativos em **Streamlit** por meio de automações e raspagens implementadas com o **Selenium**.
 
 ## Principais Características
 
