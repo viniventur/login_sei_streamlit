@@ -1,0 +1,9 @@
+[theme]
+base="dark"
+primaryColor="#005CA8"
+
+[server]
+runOnSave = true
+
+[client]
+showSidebarNavigation = false
