@@ -15,11 +15,14 @@ import time
 
 st.set_page_config(page_title='Login SEI', page_icon='src/assets/logo_sei.png')
 
-if 'driver' not in st.session_state:
-    st.error('Erro, Google Chrome não respondeu, redirecionando...')
-    st.cache_data.clear()
-    st.cache_resource.clear()
-    st.switch_page(modulos[0][1])
+
+if "login_efetuado" not in st.session_state:
+    st.error('Erro, sessão não efetuada, redirecionando...')
+    sair()
+
+if st.session_state.login_efetuado == False:
+    st.error('Erro, sessão não efetuada, redirecionando...')
+    sair()
 
 # Config Layout (condicional de local ou online)
 

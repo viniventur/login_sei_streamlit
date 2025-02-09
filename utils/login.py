@@ -6,8 +6,6 @@ env = dotenv_values('.env')
 
 from utils import *
 
-from scraping.extracao_unidade import *
-
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -62,7 +60,6 @@ def login_sei(usuario_sei, senha_sei, orgao_sei):
             tempo_longo = 1.5
 
             # Abrindo o SEI
-            #driver = webdriver.Chrome()
             driver.get(st.secrets['SITE_SEI'])
 
             print('Obtendo informacoes...')
@@ -95,8 +92,9 @@ def login_sei(usuario_sei, senha_sei, orgao_sei):
 
                 # Redirecionamento
                 st.success(f'Olá, {nome}! Acesso efetuado! Redirecionando, aguarde...')
-                lista_unidades_sei()
                 time.sleep(2)
+                driver.quit()
+                st.session_state.login_efetuado = True
                 st.switch_page(modulos[1][1])              
 
     except Exception as e:

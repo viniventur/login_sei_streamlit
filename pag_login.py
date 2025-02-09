@@ -12,6 +12,9 @@ warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title='Login SEI', page_icon='src/assets/logo_sei.png', initial_sidebar_state="collapsed")
 
+if "login_efetuado" not in st.session_state:
+    st.session_state["login_efetuado"] = False  # Inicialização
+
 # Config Layout (condicional de local ou online)
 
 if is_local():

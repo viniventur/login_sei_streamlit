@@ -32,9 +32,9 @@ def mudar_iframe(iframe):
 
 def sair():
     with st.spinner('Redirecionando...'):    
-        excluir_driver()
         st.cache_resource.clear()
         st.cache_data.clear()
         st.session_state.clear()
+        st.session_state.login_efetuado = False
         st.switch_page(modulos[0][1])
 
