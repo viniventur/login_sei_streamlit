@@ -16,7 +16,7 @@ Este projeto visa utilizar o Sistema Eletrônico de Informações (SEI) como fer
 - **Ausência de Cache em Dados Sensíveis**: O login não é salvo em cache, evitando a retenção de credenciais.
 - **Interatividade Simples**: Os dados de login são inseridos diretamente no app e preenchidos automaticamente no SEI.
 - **Execução na Nuvem**: O aplicativo funciona na nuvem do Streamlit, utilizando **Chromedriver headless**, inclusive se acessado em dispositivos móveis.
-- **Disponível Online**: O app pode ser acessado pelo link: [login-sei.streamlit.app](https://login-sei.streamlit.app/)
+- **Disponível Online**: O app pode ser acessado pelo link: [log-in-sei.streamlit.app](https://log-in-sei.streamlit.app/)
 
 
 
