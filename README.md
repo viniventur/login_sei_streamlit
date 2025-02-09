@@ -64,9 +64,14 @@ Este projeto visa utilizar o Sistema Eletrônico de Informações (SEI) como fer
     pip install -r requirements.txt
     ```
 
-3. **Execute o Aplicativo**
+3. **Adicione o site do seu SEI no secrets.toml**
 
-    `streamlit run app.py`
+    `SITE_SEI = "URL"`
+
+
+4. **Execute o Aplicativo**
+
+    `streamlit run pag_login.py`
 
 ## Licença
 
