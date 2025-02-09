@@ -63,8 +63,6 @@ def mudar_modulo(modulo_selecionado, nome_modulos, links_modulos):
         with st.spinner("Redirecionando..."):
             st.switch_page(link_selecionado)
 
-st.markdown(hide_style, unsafe_allow_html=True)
-
 def main():
 
     st.session_state.pag = 'inicio'
