@@ -52,7 +52,7 @@ Este projeto visa utilizar o Sistema Eletrônico de Informações (SEI) como fer
 
 1. **Clone o Repositório**
     ```
-    git clone https://github.com/seu-usuario/login_sei_streamlit.git
+    git clone https://github.com/viniventur/login_sei_streamlit.git
     cd login_sei_streamlit
     ```
 
@@ -66,12 +66,16 @@ Este projeto visa utilizar o Sistema Eletrônico de Informações (SEI) como fer
 
 3. **Adicione o site do seu SEI no secrets.toml**
 
-    `SITE_SEI = "URL"`
+    ```
+    SITE_SEI = "URL"
+    ```
 
 
 4. **Execute o Aplicativo**
 
-    `streamlit run pag_login.py`
+    ```
+    streamlit run pag_login.py
+    ```
 
 ## Licença
 
